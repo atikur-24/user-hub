@@ -1,3 +1,61 @@
+/* google font inter */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Inter", sans-serif;
+  }
+}
+
+@layer components {
+  /* custom container */
+  .my-container {
+    @apply container mx-auto px-10 lg:px-20;
+  }
+  /* button style */
+  .open-btn {
+    @apply rounded bg-blue-500 px-3 py-2 text-xs font-semibold transition-all hover:opacity-80 lg:rounded-md lg:px-3.5 lg:py-2.5 lg:text-sm;
+  }
+  .close-btn {
+    @apply rounded bg-red-500 px-3 py-2 text-xs font-semibold transition-all hover:opacity-80 lg:rounded-md lg:px-3.5 lg:py-2.5 lg:text-sm;
+  }
+  .search-btn {
+    @apply bg-deep-green mr-1 flex items-center space-x-1.5 rounded-md px-4 py-2 text-sm text-white;
+  }
+  .add-btn {
+    @apply bg-deep-green cursor-pointer rounded-md px-3 py-2 text-sm font-medium uppercase tracking-wide text-white transition-all hover:opacity-90 lg:px-4 lg:py-2.5 lg:text-base lg:font-semibold;
+  }
+}
+
+@layer utilities {
+  .active {
+    @apply text-white transition-all duration-200 hover:text-white hover:opacity-100;
+  }
+
+  .default {
+    @apply opacity-70 transition-all duration-200 hover:text-white hover:opacity-100;
+  }
+}
+
+/* custom loader */
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 4px solid #00cf5d;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
