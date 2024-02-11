@@ -12,7 +12,7 @@ const HeroSection = () => {
         </div>
         <div className="space-y-3 md:space-y-5 lg:space-y-7">
           <h1 className="text-green-2 text-[30px] font-semibold leading-none tracking-wide md:text-[40px] lg:text-[50px] lg:font-bold">
-            User List
+            View User List
           </h1>
           <p className="text-sm opacity-70 lg:text-base lg:!leading-7">
             User List is a handy tool that keeps track of all the people using

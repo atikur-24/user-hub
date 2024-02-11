@@ -10,7 +10,7 @@ export default {
         bgSecondary: "#1B1A1E",
         "gray-1": "#EAEAEA",
         "gray-2": "#f9f9f9",
-        "gray-9": "#1D212B",
+        "gray-9": "#212024",
         "green-2": "#00cf5d",
         "deep-green": "#00D991A1",
         "sea-green": "#37A5BF",
