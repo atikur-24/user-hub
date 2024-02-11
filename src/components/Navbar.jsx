@@ -14,7 +14,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="nav-container py-3 md:py-6">
+    <div className="nav-container pt-3 md:pt-6">
       <div className="border-b-secondary flex items-center justify-between gap-x-6 border-b pb-4">
         <Link href="/" className="flex items-center gap-x-1.5 lg:gap-x-2">
           <img
@@ -86,24 +86,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-{
-  /* <NavLink
-            to="/"
-            className={({ isActive }) => (isActive ? "active" : "default")}
-          >
-            Home
-          </NavLink>
-          <NavLink
-            to="/all-user"
-            className={({ isActive }) => (isActive ? "active" : "default")}
-          >
-            All User
-          </NavLink>
-
-          <NavLink
-            to="/add-user"
-            className={({ isActive }) => (isActive ? "active" : "default")}
-          >
-            Add User
-          </NavLink> */
-}
