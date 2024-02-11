@@ -12,7 +12,10 @@
 }
 
 @layer components {
-  /* custom container */
+  /* custom containers */
+  .nav-container {
+    @apply container mx-auto px-10 lg:px-20;
+  }
   .my-container {
     @apply container mx-auto px-10 lg:px-20;
   }
