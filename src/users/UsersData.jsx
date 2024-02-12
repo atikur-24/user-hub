@@ -10,43 +10,41 @@ const UsersData = () => {
   const [filterOptions, setFilterOptions] = useState({ sort: "" });
   const [searchQuery, setSearchQuery] = useState("");
 
-  // Handle filter by users name, email & company name
+  // handle sort by users name, email & company name
   const handleSort = (value) => {
-    // console.log(value);
-    let newFilterOptions = { ...filterOptions };
+    let newSortOptions = { ...filterOptions };
 
     switch (value) {
       case "name_asc":
-        newFilterOptions = "name_asc";
+        newSortOptions.sort = "name_asc";
         break;
       case "email_asc":
-        newFilterOptions = "email_asc";
+        newSortOptions.sort = "email_asc";
         break;
       case "company_asc":
-        newFilterOptions = "company_asc";
+        newSortOptions.sort = "company_asc";
         break;
       default:
-        newFilterOptions = "";
+        newSortOptions.sort = "";
         break;
     }
 
-    setFilterOptions(newFilterOptions);
+    setFilterOptions(newSortOptions);
   };
 
-  // Apply sorting to users name, email, company name
-  const filteredTransactions = users?.sort((a, b) => {
+  // apply sorting to users name, email, company name
+  const filteredUsers = users?.sort((a, b) => {
     const { sort } = filterOptions;
 
-    // Sort transactions
     switch (sort) {
       case "name_asc":
-        return a.firstName - b.firstName;
-      case "email_ase":
-        return a.email - b.email;
+        return a.firstName.localeCompare(b.firstName);
+      case "email_asc":
+        return a.email.localeCompare(b.email);
       case "company_asc":
-        return a.company.name - b.company.name;
+        return a.company.name.localeCompare(b.company.name);
       default:
-        return "";
+        return 0;
     }
   });
 
@@ -56,8 +54,8 @@ const UsersData = () => {
   };
 
   // apply search sort to users
-  const searchedUsers = filteredTransactions?.filter((transaction) =>
-    transaction.firstName.toLowerCase().includes(searchQuery.toLowerCase()),
+  const searchedUsers = filteredUsers?.filter((user) =>
+    user.firstName.toLowerCase().includes(searchQuery.toLowerCase()),
   );
 
   const data = {
