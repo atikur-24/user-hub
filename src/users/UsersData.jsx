@@ -1,4 +1,5 @@
 import { useState } from "react";
+import NoDataFound from "../components/NoDataFound";
 import { UserContext } from "../context/userProvider";
 import useUsersData from "../hook/useUsersData";
 import SearchUser from "./SearchUser";
@@ -66,12 +67,17 @@ const UsersData = () => {
   return (
     <UserContext.Provider value={data}>
       <section className="my-container">
-        <div className="flex flex-col justify-between gap-5 md:flex-row md:items-center">
+        <div className="flex flex-col justify-between gap-5 pt-5 md:flex-row md:items-center">
           <SearchUser onSearch={handleSearch} />
           <SortUser onSort={handleSort} />
         </div>
         <div>
-          <UserList />
+          {searchedUsers?.length > 0 ? (
+            // render all user list
+            <UserList />
+          ) : (
+            <NoDataFound />
+          )}
         </div>
       </section>
     </UserContext.Provider>

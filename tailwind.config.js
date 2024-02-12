@@ -11,17 +11,11 @@ export default {
         "gray-1": "#EAEAEA",
         "gray-2": "#f9f9f9",
         "gray-9": "#212024",
-        "green-2": "#00cf5d",
-        "deep-green": "#00D991A1",
-        "sea-green": "#37A5BF",
+        "green-2": "#2bb9da",
+        "deep-green": "#37A5BF",
+        "sea-green": "#006B5F",
       },
     },
   },
   plugins: [],
 };
-
-// TODO: Delete it
-// bgPrimary: "#161717", #17161A
-// bgSecondary: "#202020", #1B1A1E
-// border color: #212024
-// txt color: #DEE2E6  #9399A1

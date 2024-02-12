@@ -37,7 +37,7 @@ const AddUserForm = () => {
     }
   };
   return (
-    <section className="my-container my-10 text-sm md:text-base lg:my-20">
+    <section className="my-container my-10 text-sm md:text-base lg:my-16 xl:my-[70px]">
       <h2 className="pb-4 text-center text-lg font-medium uppercase text-green-2 lg:pb-10 lg:text-2xl lg:font-bold lg:tracking-wide">
         Add User Information
       </h2>
@@ -48,7 +48,7 @@ const AddUserForm = () => {
             <div className="space-y-1 lg:space-y-3">
               <label className="block">First Name:</label>
               <input
-                className="w-full rounded bg-bgSecondary p-2 shadow shadow-black outline-none outline-offset-0 transition-all placeholder:text-secondary focus:outline-deep-green lg:px-3 lg:py-2.5"
+                className="w-full rounded bg-bgSecondary p-2 shadow shadow-black outline-none outline-offset-0 transition-all placeholder:text-secondary focus:outline-green-2 lg:px-3 lg:py-2.5"
                 type="text"
                 placeholder="Enter first Name"
                 name="firstName"
@@ -59,7 +59,7 @@ const AddUserForm = () => {
             <div className="space-y-1 lg:space-y-3">
               <label className="block">Last Name:</label>
               <input
-                className="w-full rounded bg-bgSecondary p-2 shadow shadow-black outline-none outline-offset-0 transition-all placeholder:text-secondary focus:outline-deep-green lg:px-3 lg:py-2.5"
+                className="w-full rounded bg-bgSecondary p-2 shadow shadow-black outline-none outline-offset-0 transition-all placeholder:text-secondary focus:outline-green-2 lg:px-3 lg:py-2.5"
                 type="text"
                 placeholder="Enter last name"
                 name="lastName"
@@ -72,7 +72,7 @@ const AddUserForm = () => {
             <div className="space-y-1 lg:space-y-3">
               <label className="block">Email:</label>
               <input
-                className="w-full rounded bg-bgSecondary p-2 shadow shadow-black outline-none outline-offset-0 transition-all focus:outline-deep-green lg:px-3 lg:py-2.5"
+                className="w-full rounded bg-bgSecondary p-2 shadow shadow-black outline-none outline-offset-0 transition-all focus:outline-green-2 lg:px-3 lg:py-2.5"
                 type="email"
                 placeholder="Enter Email"
                 name="email"
@@ -83,7 +83,7 @@ const AddUserForm = () => {
             <div className="space-y-1 lg:space-y-3">
               <label className="block">Company Name:</label>
               <input
-                className="w-full rounded bg-bgSecondary p-2 shadow shadow-black outline-none outline-offset-0 transition-all focus:outline-deep-green lg:px-3 lg:py-2.5"
+                className="w-full rounded bg-bgSecondary p-2 shadow shadow-black outline-none outline-offset-0 transition-all focus:outline-green-2 lg:px-3 lg:py-2.5"
                 type="text"
                 placeholder="Enter company name"
                 name="companyName"
@@ -96,7 +96,7 @@ const AddUserForm = () => {
             <div className="space-y-1 lg:space-y-3">
               <label className="block">Address:</label>
               <input
-                className="w-full rounded bg-bgSecondary p-2 shadow shadow-black outline-none outline-offset-0 transition-all focus:outline-deep-green lg:px-3 lg:py-2.5"
+                className="w-full rounded bg-bgSecondary p-2 shadow shadow-black outline-none outline-offset-0 transition-all focus:outline-green-2 lg:px-3 lg:py-2.5"
                 type="text"
                 placeholder="Enter address"
                 name="address"
@@ -107,7 +107,7 @@ const AddUserForm = () => {
             <div className="space-y-1 lg:space-y-3">
               <label className="block">Street:</label>
               <input
-                className="w-full rounded bg-bgSecondary p-2 shadow shadow-black outline-none outline-offset-0 transition-all placeholder:text-secondary focus:outline-deep-green lg:px-3 lg:py-2.5"
+                className="w-full rounded bg-bgSecondary p-2 shadow shadow-black outline-none outline-offset-0 transition-all placeholder:text-secondary focus:outline-green-2 lg:px-3 lg:py-2.5"
                 type="text"
                 placeholder="Enter street"
                 name="street"
@@ -120,7 +120,7 @@ const AddUserForm = () => {
             <div className="space-y-1 lg:space-y-3">
               <label className="block">City:</label>
               <input
-                className="w-full rounded bg-bgSecondary p-2 shadow shadow-black outline-none outline-offset-0 transition-all focus:outline-deep-green lg:px-3 lg:py-2.5"
+                className="w-full rounded bg-bgSecondary p-2 shadow shadow-black outline-none outline-offset-0 transition-all focus:outline-green-2 lg:px-3 lg:py-2.5"
                 type="text"
                 placeholder="Enter city"
                 name="city"
@@ -131,7 +131,7 @@ const AddUserForm = () => {
             <div className="space-y-1 lg:space-y-3">
               <label className="block">State:</label>
               <input
-                className="w-full rounded bg-bgSecondary p-2 shadow shadow-black outline-none outline-offset-0 transition-all placeholder:text-secondary focus:outline-deep-green lg:px-3 lg:py-2.5"
+                className="w-full rounded bg-bgSecondary p-2 shadow shadow-black outline-none outline-offset-0 transition-all placeholder:text-secondary focus:outline-green-2 lg:px-3 lg:py-2.5"
                 type="text"
                 placeholder="Enter state"
                 name="state"
@@ -144,7 +144,7 @@ const AddUserForm = () => {
             <div className="space-y-1 lg:space-y-3">
               <label className="block">Postal Code:</label>
               <input
-                className="w-full rounded bg-bgSecondary p-2 shadow shadow-black outline-none outline-offset-0 transition-all focus:outline-deep-green lg:px-3 lg:py-2.5"
+                className="w-full rounded bg-bgSecondary p-2 shadow shadow-black outline-none outline-offset-0 transition-all focus:outline-green-2 lg:px-3 lg:py-2.5"
                 type="number"
                 placeholder="Enter postal code"
                 name="postalCode"
@@ -155,7 +155,7 @@ const AddUserForm = () => {
             <div className="space-y-1 lg:space-y-3">
               <label className="block">Upload Image:</label>
               <input
-                className="w-full rounded bg-bgSecondary p-2 shadow shadow-black outline-none outline-offset-0 transition-all file:bg-secondary focus:outline-deep-green lg:px-3 lg:py-2.5"
+                className="w-full rounded bg-bgSecondary p-2 shadow shadow-black outline-none outline-offset-0 transition-all file:bg-secondary focus:outline-green-2 lg:px-3 lg:py-2.5"
                 type="file"
                 name="image"
                 required

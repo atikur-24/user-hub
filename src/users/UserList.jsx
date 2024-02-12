@@ -26,13 +26,13 @@ const UserList = () => {
 
   return (
     <>
-      <div className="grid grid-cols-1 gap-2 pt-6 md:grid-cols-2 md:gap-6 md:pt-8 lg:grid-cols-3 lg:gap-8 lg:pt-12 xl:grid-cols-4 xl:gap-10">
+      <div className="grid grid-cols-1 gap-5 pt-6 md:grid-cols-2 md:gap-6 md:pt-8 lg:grid-cols-3 lg:gap-8 lg:pt-12 xl:grid-cols-4 xl:gap-10">
         {paginatedUsers?.map((user) => (
           <UserCard key={user.id} user={user} />
         ))}
       </div>
       <ReactPaginate
-        className="my-auto flex items-center justify-center space-x-3 pb-5 pt-4 text-center align-middle font-semibold lg:pt-6"
+        className="my-auto flex items-center justify-center space-x-3 pb-5 pt-4 text-center align-middle font-semibold md:pt-6 lg:pt-8"
         activeClassName="text-white rounded-full px-4 py-2 bg-deep-green text-white"
         breakLabel="..."
         nextLabel="Next"

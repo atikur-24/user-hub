@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
+import ErrorPage from "../errorPage/ErrorPage";
 import MainLayout from "../layouts/MainLayout";
 import AddUserForm from "../users/AddUserForm";
 import UserDetails from "../users/UserDetails";
@@ -9,7 +10,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout />,
-    // errorElement: <ErrorPage />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
