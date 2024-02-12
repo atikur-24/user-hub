@@ -1,4 +1,5 @@
 import HeroSection from "./HeroSection";
+import AddUserForm from "./users/AddUserForm";
 import UsersData from "./users/UsersData";
 
 const App = () => {
@@ -6,6 +7,7 @@ const App = () => {
     <main>
       <HeroSection />
       <UsersData />
+      <AddUserForm />
     </main>
   );
 };

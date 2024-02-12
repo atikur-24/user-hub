@@ -11,7 +11,7 @@ const UserList = () => {
 
   // Function to handle page change
   const handlePageClick = (selectedPage) => {
-    setCurrentPage(selectedPage?.selected);
+    setCurrentPage(selectedPage.selected);
   };
 
   // Calculate the start and end indices for the current page
@@ -19,8 +19,7 @@ const UserList = () => {
   const endIndex = startIndex + itemsPerPage;
 
   // Filter and paginate the health tips based on the current page
-  const paginatedHealthTips = searchedUsers?.slice(startIndex, endIndex);
-  console.log(paginatedHealthTips);
+  const paginatedUsers = searchedUsers?.slice(startIndex, endIndex);
 
   // Calculate the total number of pages
   const pageCount = Math.ceil(searchedUsers?.length / itemsPerPage);
@@ -28,12 +27,12 @@ const UserList = () => {
   return (
     <>
       <div className="grid grid-cols-1 gap-2 pt-6 md:grid-cols-2 md:gap-6 md:pt-8 lg:grid-cols-3 lg:gap-8 lg:pt-12 xl:grid-cols-4 xl:gap-10">
-        {paginatedHealthTips?.map((user) => (
+        {paginatedUsers?.map((user) => (
           <UserCard key={user.id} user={user} />
         ))}
       </div>
       <ReactPaginate
-        className="my-auto flex items-center justify-center space-x-3 pb-5 pt-4  text-center align-middle font-semibold"
+        className="my-auto flex items-center justify-center space-x-3 pb-5 pt-4 text-center align-middle font-semibold lg:pt-6"
         activeClassName="text-white rounded-full px-4 py-2 bg-deep-green text-white"
         breakLabel="..."
         nextLabel="Next"

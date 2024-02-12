@@ -4,7 +4,7 @@ const UserCard = ({ user }) => {
   const { id, image, firstName, lastName, email, company, address } =
     user || {};
   return (
-    <div className="space-y-3 rounded border border-gray-600 p-3 shadow-2xl md:p-5 lg:p-6">
+    <div className="space-y-3 rounded border border-gray-600 bg-bgSecondary p-3 shadow-2xl md:p-5 lg:p-6">
       <div className="flex justify-center pb-4">
         <img className="h-20" src={image} alt={firstName} />
       </div>
