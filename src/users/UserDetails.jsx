@@ -18,14 +18,14 @@ const UserDetails = () => {
       <h3 className="pb-4 text-center text-lg font-semibold uppercase tracking-wide text-green-2 md:text-xl lg:pb-6 lg:font-bold">
         User Details
       </h3>
-      <div className="flex justify-between divide-x rounded-sm border border-deep-green p-5 md:rounded-md md:p-7 lg:p-9">
+      <div className="divide grid grid-cols-1 justify-items-stretch gap-y-5 divide-y divide-dashed divide-secondary rounded-sm border border-deep-green p-5 md:rounded-md md:p-7 lg:grid-cols-3 lg:justify-items-start lg:gap-x-10 lg:divide-x lg:divide-y-0 lg:p-9">
         <div>
           <h5 className="text-base font-medium md:text-lg lg:font-semibold">
             Personal Information:
           </h5>
           <div className="pt-3 md:pt-5 lg:pt-6">
-            <div className="flex justify-center rounded bg-white">
-              <img className="h-20 lg:h-24" src={image} alt={firstName} />
+            <div className="flex justify-center rounded bg-white/95 py-2 lg:py-4">
+              <img className="h-20  lg:h-24" src={image} alt={firstName} />
             </div>
             <div className="space-y-1 pt-2 text-sm md:text-base lg:space-y-2 lg:pt-3">
               <p>
@@ -45,7 +45,7 @@ const UserDetails = () => {
             </div>
           </div>
         </div>
-        <div>
+        <div className="pt-3 lg:pl-5 lg:pt-0">
           <h5 className="text-base font-medium md:text-lg lg:font-semibold">
             Company Information:
           </h5>
@@ -55,7 +55,7 @@ const UserDetails = () => {
               {company?.name}
             </p>
             <p>
-              <span className="text-gray-300/80">Company Address:</span>{" "}
+              <span className="text-gray-300/80">Address:</span>{" "}
               {company?.address?.address}
             </p>
             <p>
@@ -68,7 +68,7 @@ const UserDetails = () => {
             </p>
           </div>
         </div>
-        <div className="">
+        <div className="pt-3 lg:pl-5 lg:pt-0">
           <h5 className="text-base font-medium md:text-lg lg:font-semibold">
             Address Information:
           </h5>
