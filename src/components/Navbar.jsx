@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <div className="nav-container pt-3 md:pt-6">
-      <div className="border-b-secondary flex items-center justify-between gap-x-6 border-b pb-4">
+      <div className="flex items-center justify-between gap-x-6 border-b border-b-gray-600 pb-4">
         <Link href="/" className="flex items-center gap-x-1.5 lg:gap-x-2">
           <img
             className="h-[36px] w-full lg:h-[50px]"
@@ -24,7 +24,7 @@ const Navbar = () => {
           />
           <div className="text-center text-sm font-normal uppercase lg:text-lg lg:font-semibold">
             <span className="tracking-wider">User</span> <br />
-            <span className="text-green-2 tracking-wide">Hub</span>
+            <span className="tracking-wide text-green-2">Hub</span>
           </div>
         </Link>
         {/* large device navbar and nav item */}
@@ -42,7 +42,7 @@ const Navbar = () => {
         {/* small device navbar and nav item */}
         {isMenuOpen && (
           <div className="nav-container w-fulls absolute left-0 top-20 z-10 transition-all">
-            <div className="border-secondary bg-bgSecondary rounded border p-4">
+            <div className="rounded border border-secondary bg-bgSecondary p-4">
               {/* Mobile Nav Items Section */}
               <nav className="flex flex-col gap-y-2.5 text-sm">
                 {navItems?.map((item) => (

@@ -22,7 +22,7 @@
 
 ### Wrote the code
 
-- Component base design and implemented re-useable component
+- Component based design and create to re-useable component
 - Used useState and useEffect hooks.
 - Used custom hook.
 - Used context api.
