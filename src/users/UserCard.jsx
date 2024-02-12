@@ -9,7 +9,7 @@ const UserCard = ({ user }) => {
         <img className="h-20" src={image} alt={firstName} />
       </div>
       <Link to={`/user-details/${id}`}>
-        <h3 className="hover:text-green-2 cursor-pointer text-center text-base font-medium tracking-wide underline-offset-4 transition-all hover:underline md:text-lg md:font-semibold lg:text-xl">
+        <h3 className="cursor-pointer text-center text-base font-medium tracking-wide underline-offset-4 transition-all hover:text-green-2 hover:underline md:text-lg md:font-semibold lg:text-xl">
           {firstName + " " + lastName}
         </h3>
       </Link>
