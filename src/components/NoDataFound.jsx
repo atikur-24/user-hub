@@ -1,9 +1,7 @@
-import React from "react";
-
 const NoDataFound = () => {
   return (
-    <p className="text-center text-lg lg:text-2xl">
-      No Transaction Data Found.
+    <p className="my-2 text-center text-lg md:my-6 lg:text-2xl">
+      No User Data Found.
     </p>
   );
 };
