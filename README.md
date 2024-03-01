@@ -1,4 +1,4 @@
-# Internship Task at Technext Limited
+# Simple User List Application
 
 ## [User Hub Live Link](https://user-hub-a7a7e.web.app/)
 
